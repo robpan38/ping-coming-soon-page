@@ -15,7 +15,7 @@
   <script src="https://kit.fontawesome.com/14823fd505.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
 </head>
-<body>
+<body onresize="toggleErrorMessages()">
   <main>
     <img class="logo" src="images/logo.svg">
     <div class="message">
@@ -26,6 +26,7 @@
 
     <div class="form">
       <input type="text" placeholder="Your email address...">
+      <p class="error-text-mobile">Please provide a valid email address</p>
       <button onclick="fct()">Notify Me</button>
     </div>
     <p class="error-text">Please provide a valid email address</p>
